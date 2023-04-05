@@ -91,9 +91,16 @@ a:nth-child(4):hover ~ .animation {
   justify-content: center;
   align-items: center;
 }
+.start_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
 h1 {
   font-size: 40px;
+  margin-top: 50px;
 }
 
 .start p {
@@ -127,10 +134,130 @@ h1 {
   }
 }
 
+.container {
+  display: flex;
+  align-items: center;
+  width: 50%;
+  overflow: hidden;
+}
+
+.scroll-parent {
+  position: relative;
+  width: 100%;
+  height: 20rem;
+  padding: 2rem 0;
+  overflow-x: hidden;
+}
+
+.scroll-element {
+  width: inherit;
+  height: inherit;
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.scroll-element p {
+  font-size: 1em;
+}
+
+.primary {
+  animation: primary 7s linear infinite;
+}
+
+.secondary {
+  animation: secondary 7s linear infinite;
+}
+
+@keyframes primary {
+  from {
+    left: 0%;
+  }
+  to {
+    left: -100%;
+  }
+}
+
+@keyframes secondary {
+  from {
+    left: 100%;
+  }
+  to {
+    left: 0%;
+  }
+}
+
 .aboutme {
   background-color: #176100;
+  margin: 0 auto;
+  padding-top: 50px;
+  height: 400px;
   width: 100%;
-  height: auto;
+}
+.entire-carrousel {
+  margin: auto;
+  width: 190px;
+  perspective: 1000px;
+  position: relative;
+  padding-top: 80px;
+}
+.content-carrousel {
+  width: 100%;
+  position: absolute;
+  float: right;
+  animation: rotar 15s infinite linear;
+  transform-style: preserve-3d;
+}
+.content-carrousel:hover {
+  animation-play-state: paused;
+  cursor: pointer;
+}
+.content-carrousel video {
+  width: 100%;
+  height: 120px;
+  border: 1px solid #3b444b;
+  overflow: hidden;
+  position: absolute;
+}
+
+.content-carrousel video:nth-child(1) {
+  transform: rotateY(0deg) translateZ(300px);
+}
+.content-carrousel video:nth-child(2) {
+  transform: rotateY(40deg) translateZ(300px);
+}
+.content-carrousel video:nth-child(3) {
+  transform: rotateY(80deg) translateZ(300px);
+}
+
+.content-carrousel img {
+  image-rendering: auto;
+  transition: all 300ms;
+  width: 100%;
+  height: 100%;
+}
+
+.content-carrousel img:hover {
+  transform: scale(1.2);
+  transition: all 300ms;
+}
+
+.shadow {
+  position: absolute;
+  box-shadow: 0px 0px 20px 0px #000;
+  border-radius: 1px;
+}
+
+@keyframes rotar {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
 }
 
 video {
@@ -214,4 +341,7 @@ footer {
   background-color: #176100;
   width: 100%;
   height: 50px;
+}
+footer nav {
+  margin-top: 0;
 }

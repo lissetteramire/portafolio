@@ -10,33 +10,61 @@
   <body>
     <header>
       <nav>
-        <a href="#">Inicio</a>
-        <a href="#">Sobre mi</a>
-        <a href="#">Proyectos</a>
-        <a href="#">Contacto</a>
+        <a href="#start">Inicio</a>
+        <a href="#aboutme">Sobre mi</a>
+        <a href="#proyects">Proyectos</a>
+        <a href="#contact">Contacto</a>
         <div class="animation start-home"></div>
       </nav>      
     </header>
     <main>
-      <section class="start">
-        <h1>Lissette Ramirez</h1>
-        <p>FrontEnd Developer</p>
+      <section class="start" id="start">
+        <div class="start_text">
+          <h1>Lissette Ramirez</h1>
+          <p>FrontEnd Developer</p>
+        </div>
+        <div class="container">
+          <div class="scroll-parent">
+            <div class="scroll-element primary">
+              <p>React</p>
+              <p>JavaScript</p>
+              <p>Redux</p>
+              <p>HTML</p>
+              <p>CSS</p>
+              <p>CI/CD</p>
+              <p>Testing</p>
+            </div>
+            <div class="scroll-element secondary">
+              <p>React</p>
+              <p>JavaScript</p>
+              <p>Redux</p>
+              <p>HTML</p>
+              <p>CSS</p>
+              <p>CI/CD</p>
+              <p>Testing</p>
+            </div>
+          </div>
+        </div>
       </section>
-      <section class="aboutme">
-        <video src="/video/ipad-2988.mp4">
-          <h3>Un poco de mi</h3>
-          <p></p>
-        </video>
-        <video src="/video/iphone-8255.mp4">
-          <h3>Mi experiencia</h3>
-          <p></p>
-        </video>
-        <video src="/video/smartphone-90.mp4">
-          <h3>Que busco?</h3>
-          <p></p>
-        </video>
+      <section class="aboutme" id="aboutme">
+        <div class="entire-carrousel">
+          <div class="content-carrousel">
+            <video class="shadow" src="/video/ipad-2988.mp4">
+              <h3>Un poco de mi</h3>
+              <p></p>
+            </video>
+            <video src="/video/iphone-8255.mp4">
+              <h3>Mi experiencia</h3>
+              <p></p>
+            </video>
+            <video src="/video/smartphone-90.mp4">
+              <h3>Que busco?</h3>
+              <p></p>
+            </video>
+          </div>
+        </div>
       </section>
-      <section class="proyects">
+      <section class="proyects" id="proyects">
         <div class="proyect-container">
           <div class="front"><h3>Proyecto 1</h3></div>
           <div class="back"><img src="/images/finger-gb0d61110c_640.jpg" alt=""></img></div>
@@ -54,17 +82,17 @@
           <div class="back"><img src="/images/finger-gb0d61110c_640.jpg" alt=""></img></div>
         </div> 
       </section>
-      <section class="contact">
+      <section class="contact" id="contact">
         <img src="/images/linkedin.png" alt="linkedin">
         <img src="/images/github.png" alt="github">
         <img src="/images/stackoverflow.png" alt="stackoverflow">
       </section>
       <footer>
         <nav>
-          <a href="#">Inicio</a>
-          <a href="#">Sobre mi</a>
-          <a href="#">Proyectos</a>
-          <a href="#">Contacto</a>
+          <a href="#start">Inicio</a>
+          <a href="#aboutme">Sobre mi</a>
+          <a href="#proyects">Proyectos</a>
+          <a href="#contact">Contacto</a>
           <div class="animation start-home"></div>
         </nav>
       </footer>
